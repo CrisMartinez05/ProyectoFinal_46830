@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>DesarrolloWeb</title>
+</head>
+
+<body>
+    <header>
+        <h1>Your Fitness Cave's</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./blog.html">Blogs</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <main>
+        <section>
+            <h2>Necesitás ayuda o tenés dudas?</h2>
+            <p>
+                Si quieres contactar con nosotros puedes hacerlo a través del siguiente formulario. Lo recibiremos y estaremos encantados de ayudarte en todo lo que esté en nuestra mano.
+            </p>
+        <section class="form">
+            <form action="#" method="get">
+            <div>
+                <input type="text" placeholder="Nombres" name="nombres" required>
+            </div>
+            <div>
+                <input type="text" placeholder="Apellido" name="apellido" required>
+            </div>
+            <div>
+                <input type="number" placeholder="Edad" min="0" max="99" name="edad">
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="pais">País de residencia</label>
+                <br><br>
+                <select name="pais">
+                    <option value="AR">Argentina</option>
+                    <option value="PE">Perú</option>
+                    <option value="CL">Chile</option>
+                    <option value="VE">Venezuela</option>
+                    <option value="BR">Brasil</option>
+                    <option value="BO">Bolivia</option>
+                </select>
+            </div>
+            <div>
+                <div>M</div>
+                <input type="radio" name="sexo" value="masculino">
+            </div>
+            <div>
+                <div>F</div>
+                <input type="radio" name="sexo" value="femenino">
+            </div>
+            <div>
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Dejanos tu comentario"></textarea>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="tituloFooter">
+            <h2>Your Fitness Cave's</h2>
+        </div>
+        <div class="serviciosFooter">
+            <div class="servicios">
+                <img src="../recursos/imagenes/Entrega.svg" alt="mano entregando un paquete" class="img">
+                <p>ENVIOS GRATIS A PARTIR DE $ 15000</p>
+                <p><a href="#">Conoce más...</a></p>
+            </div>
+            <div class="servicios">
+                <img src="../recursos/imagenes/Garantia.svg" alt="mano con el pulgar hacia arriba dentro de un escudo"
+                    class="img">
+                <p>MAXIMA CALIDAD</p>
+                <p><a href="#">Conoce más...</a></p>
+            </div>
+            <div class="servicios">
+                <img src="../recursos/imagenes/Medioambiente.svg" alt="manos sosteniendo el planeta" class="img">
+                <p>SOSTENIBILIDAD</p>
+                <p><a href="#">Conoce más...</a></p>
+            </div>
+            
+        </div>
+
+
+        <p class="derechos">2023 - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
