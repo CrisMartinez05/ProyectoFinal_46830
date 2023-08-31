@@ -14,7 +14,7 @@
 }
 
 header {
-    background-image: url(../recursos/imagenes/espalda.jpeg);
+    background-image: url(../recursos/img/espalda.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 45vW;
@@ -163,7 +163,7 @@ footer {
     position: absolute;
     top: 5px;
     right: 5px;
-    /* background-color: aquamarine; */
+    color: white;
 }
 
 .servicios {
