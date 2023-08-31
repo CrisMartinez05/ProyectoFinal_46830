@@ -14,7 +14,7 @@
 }
 
 header {
-    background-image: url(../recursos/img/espalda.jpeg);
+    background-image: url(../recursos/imagenes/espalda.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 45vW;
@@ -75,7 +75,7 @@ h2 {
 
 main {
     width: 100%;
-    height: 750px;
+    /* height: 750px; */
 }
 
 section {
@@ -127,7 +127,7 @@ article {
 
 footer {
     position: relative;
-    background-color: rgb(224, 190, 165);
+    background-color: black;
     width: 100%;
     height: 120px;
 }
@@ -140,7 +140,7 @@ footer {
     top: 100px;
     right: 30px;
     font-weight: 600;
-    color: rgb(162, 81, 24);
+    color: white;
 
 }
 
