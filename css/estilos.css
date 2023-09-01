@@ -12,7 +12,7 @@
 .fondo {
     background-color: black;
 }
-
+/* HEADER */
 header {
     background-image: url(../recursos/img/espalda.jpeg);
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ header {
     background-size: 50vW;
     background-color: black;
     width: 100%;
-    height: 280px;
+    /* height: 280px; */
     position: sticky;
     top: 0;
 }
@@ -62,16 +62,16 @@ header nav ul li a {
     color: white;
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 990px) {
     header {
         background-size: 80vw;
         background-position: top;
-        height: 210px;
+        height: 190px;
     }
 
     header h1 {
         font-size: 2.3em;
-        padding-top: 85px;
+        padding-top: 20px;
     }
 
     header nav ul {
@@ -96,7 +96,7 @@ header nav ul li a {
         display: none;
     }
 }
-
+/* MAIN */
 h2 {
     font-family: "nombre";
     font-style: oblique;
@@ -111,11 +111,13 @@ h3 {
     margin-left: 10px;
 }
 
-h5 {
+h6 {
     font-family: "nombre";
     font-style: oblique;
+    font-weight: 100;
     color: white;
-    margin-left: 10px;
+    font-size: 0.9em;
+    text-align: center;
 }
 
 main {
@@ -129,26 +131,26 @@ main {
 
 section p {
     padding-top: 20px;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: white;
     text-align: justify;
 }
 
-div .col-4 {
+/* div .col-4 {
     overflow: hidden;
-}
+} */
 
-.accesorio {
+.img-main {
     width: 100%;
 }
 
-.suplemento {
+/* .suplemento {
     width: 100%;
 }
 
 .ropa {
     width: 100%;
-}
+} */
 
 .span {
     text-decoration: underline;
