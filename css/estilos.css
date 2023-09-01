@@ -72,6 +72,13 @@ h2 {
     margin-left: 10px;
 }
 
+h3{
+    font-family: "nombre";
+    font-style: oblique;
+    color: white;
+    margin-left: 10px;
+}
+
 h5 {
     font-family: "nombre";
     font-style: oblique;
@@ -105,6 +112,22 @@ div .col-4 {
 
 .ropa {
     width: 200%;
+}
+
+.span{
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: chartreuse;
+}
+
+.iframe{
+    width: 90%;
+    margin: auto;
+    height: 120px;
+}
+
+.embarazada{
+    width: 100%;
 }
 
 aside p {
