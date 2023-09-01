@@ -10,8 +10,8 @@
     <title>Proyecto Final</title>
 </head>
 
-<body>
-    <header>
+<body class="fondo">
+    <header class="z_index">
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -24,54 +24,64 @@
         <h1>Vivir Fitness</h1>
     </header>
     <main>
-        <section>
-            <h2>Necesitás ayuda o tenés dudas?</h2>
-            <p>
-                Si quieres contactar con nosotros puedes hacerlo a través del siguiente formulario. Lo recibiremos y estaremos encantados de ayudarte en todo lo que esté en nuestra mano.
-            </p>
-        <section class="form">
-            <form action="#" method="get">
-            <div>
-                <input type="text" placeholder="Nombres" name="nombres" required>
+        <section class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h2>Necesitás ayuda o tenés dudas?</h2>
+                    <p>
+                        Si querés contactarte con nosotros podés hacerlo a través del siguiente formulario. Estaremos
+                        encantados de ayudarte en todo lo que esté a nuestra alcance.
+                    </p>
+                    <img src="../recursos/img/fitness.jpeg" alt="arnold_pensativo">
+                </div>
+                <div class="col-6">
+                    <section class="form">
+                        <form action="#" method="get">
+                            <div>
+                                <input type="text" placeholder="Nombres" name="nombres" class="fondoForm" required>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Apellido" name="apellido" class="fondoForm" required>
+                            </div>
+                            <div>
+                                <input type="number" placeholder="Edad" min="0" max="99" name="edad" class="fondoForm">
+                            </div>
+                            <div>
+                                <input type="email" name="email" placeholder="Email" required class="fondoForm">
+                            </div>
+                            <div>
+                                <label for="pais" class="fondo">País de residencia</label>
+                                <br><br>
+                                <select name="pais" class="fondoForm" required>
+                                    <option value="...">.............</option>
+                                    <option value="AR">Argentina</option>
+                                    <option value="PE">Perú</option>
+                                    <option value="CL">Chile</option>
+                                    <option value="VE">Venezuela</option>
+                                    <option value="BR">Brasil</option>
+                                    <option value="BO">Bolivia</option>
+                                </select>
+                            </div>
+                            <div>
+                                <div>M</div>
+                                <input type="radio" name="sexo" value="masculino">
+                            </div>
+                            <div>
+                                <div>F</div>
+                                <input type="radio" name="sexo" value="femenino">
+                            </div>
+                            <div>
+                                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Dejanos tu comentario"
+                                    class="fondoForm"></textarea>
+                            </div>
+                            <div>
+                                <input type="submit" class="fondoForm">
+                            </div>
+                        </form>
+                    </section>
+                </div>
             </div>
-            <div>
-                <input type="text" placeholder="Apellido" name="apellido" required>
-            </div>
-            <div>
-                <input type="number" placeholder="Edad" min="0" max="99" name="edad">
-            </div>
-            <div>
-                <input type="email" name="email" placeholder="Email" required>
-            </div>
-            <div>
-                <label for="pais">País de residencia</label>
-                <br><br>
-                <select name="pais">
-                    <option value="AR">Argentina</option>
-                    <option value="PE">Perú</option>
-                    <option value="CL">Chile</option>
-                    <option value="VE">Venezuela</option>
-                    <option value="BR">Brasil</option>
-                    <option value="BO">Bolivia</option>
-                </select>
-            </div>
-            <div>
-                <div>M</div>
-                <input type="radio" name="sexo" value="masculino">
-            </div>
-            <div>
-                <div>F</div>
-                <input type="radio" name="sexo" value="femenino">
-            </div>
-            <div>
-                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Dejanos tu comentario"></textarea>
-            </div>
-            <div>
-                <input type="submit">
-            </div>
-        </form>
         </section>
-        
     </main>
     <footer>
         <div class="tituloFooter">
