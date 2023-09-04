@@ -12,6 +12,7 @@
 .fondo {
     background-color: black;
 }
+
 /* HEADER */
 header {
     background-image: url(../recursos/img/espalda.jpeg);
@@ -21,7 +22,6 @@ header {
     background-size: 50vW;
     background-color: black;
     width: 100%;
-    /* height: 280px; */
     position: sticky;
     top: 0;
 }
@@ -96,6 +96,7 @@ header nav ul li a {
         display: none;
     }
 }
+
 /* MAIN */
 h2 {
     font-family: "nombre";
@@ -131,26 +132,13 @@ main {
 
 section p {
     padding-top: 20px;
-    /* font-weight: bold; */
     color: white;
     text-align: justify;
 }
 
-/* div .col-4 {
-    overflow: hidden;
-} */
-
 .img-main {
     width: 100%;
 }
-
-/* .suplemento {
-    width: 100%;
-}
-
-.ropa {
-    width: 100%;
-} */
 
 .span {
     text-decoration: underline;
@@ -196,7 +184,6 @@ form {
     width: 60%;
     text-align: center;
     color: white;
-    /* z-index: -1; */
 }
 
 .fondoForm {
@@ -227,58 +214,34 @@ article {
 
 
 footer {
-    position: relative;
     background-color: black;
     width: 100%;
-    height: 120px;
+    height: auto;
 }
 
 .derechos {
-    display: inline;
-    font-size: small;
     text-align: center;
-    position: absolute;
-    top: 100px;
-    right: 30px;
     font-weight: 600;
     color: white;
-
 }
 
 .tituloFooter {
 
-    width: 150px;
-    height: auto;
     text-align: center;
-    position: absolute;
-    top: 20px;
-    left: 80px;
-
-
+    font-size: x-large;
 }
 
 .serviciosFooter {
-    display: inline-block;
-    width: 70%;
-    height: 70%;
-    position: absolute;
-    top: 5px;
-    right: 5px;
     color: white;
 }
 
 .servicios {
-    display: inline-block;
-    margin: 0 4px;
-    width: 30%;
-    height: 100%;
     font-size: x-small;
     font-weight: 300;
     text-align: center;
-
-
+    color: white;
 }
 
 .img {
-    height: 50px;
+    height: 75px;
 }
