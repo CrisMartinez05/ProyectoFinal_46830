@@ -44,7 +44,6 @@ header nav ul {
     flex-flow: row wrap;
     justify-content: flex-end;
     align-content: center;
-
 }
 
 header nav ul li {
@@ -62,54 +61,17 @@ header nav ul li a {
     color: white;
 }
 
-@media(max-width: 990px) {
-    header {
-        background-size: 80vw;
-        background-position: top;
-        height: 190px;
-    }
-
-    header h1 {
-        font-size: 2.3em;
-        padding-top: 20px;
-    }
-
-    header nav ul {
-
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-    }
-
-    header nav ul li {
-        margin: 2px;
-        width: 75px;
-        height: auto;
-        border-radius: 5px;
-    }
-
-    h2 {
-        font-size: medium;
-    }
-
-    aside {
-        display: none;
-    }
-}
-
 /* MAIN */
 h2 {
     font-family: "nombre";
     font-style: oblique;
     color: white;
-    margin-left: 10px;
 }
 
 h3 {
     font-family: "nombre";
     font-style: oblique;
     color: white;
-    margin-left: 10px;
 }
 
 h6 {
@@ -128,7 +90,6 @@ main {
 .z_index {
     z-index: 1;
 }
-
 
 section p {
     padding-top: 20px;
@@ -170,7 +131,6 @@ aside p {
     font-size: xx-large;
 }
 
-
 .form {
     margin-top: 20px;
 }
@@ -211,18 +171,20 @@ article {
     margin-top: 1dvb;
 }
 
-
+/* FOOTER */
 
 footer {
     background-color: black;
     width: 100%;
     height: auto;
+    padding-top: 40px;
 }
 
 .derechos {
     text-align: center;
     font-weight: 600;
     color: white;
+    padding-top: 30px;
 }
 
 .tituloFooter {
@@ -231,9 +193,9 @@ footer {
     font-size: x-large;
 }
 
-.serviciosFooter {
+/* .serviciosFooter {
     color: white;
-}
+} */
 
 .servicios {
     font-size: x-small;
@@ -244,4 +206,43 @@ footer {
 
 .img {
     height: 75px;
+}
+
+@media(max-width: 990px) {
+    header {
+        background-size: 80vw;
+        background-position: top;
+        height: 190px;
+    }
+
+    header h1 {
+        font-size: 2.3em;
+        padding-top: 20px;
+    }
+
+    header nav ul {
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 2px;
+        width: 75px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+
+    h3{
+        font-size: medium;
+    }
+
+    aside {
+        display: none;
+    }
 }
