@@ -11,6 +11,7 @@
 
 .fondo {
     background-color: black;
+    color: white;
 }
 
 /* HEADER */
@@ -118,6 +119,10 @@ section p {
     width: 100%;
 }
 
+.blog{
+    text-align: justify;
+}
+
 aside p {
     color: red;
     text-align: center;
@@ -164,19 +169,11 @@ form div {
     margin-bottom: 20px;
 }
 
-article {
-    margin: 20px;
-}
-
-.item {
-    margin-left: 20px;
-    margin-top: 15px;
-}
-
 .video {
-    margin-left: 20%;
-    margin-top: 1dvb;
-}
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+} 
 
 /* FOOTER */
 
