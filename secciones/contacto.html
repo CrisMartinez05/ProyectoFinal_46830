@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
@@ -11,30 +12,36 @@
 </head>
 
 <body class="fondo">
+    <!-- HEADER -->
     <header class="z_index">
+        <!-- BARRA NAVEGACION -->
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
-                <li class="productos"><a href="./productos.html">Productos</a></li>
+                <li><a href="./productos.html">Productos</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
                 <li><a href="./blog.html">Blogs</a></li>
             </ul>
         </nav>
+        <!-- TITULO -->
         <h1>Vivir Fitness</h1>
     </header>
+    <!-- MAIN -->
     <main>
         <section class="container">
             <div class="row">
-                <div class="col-4">
+                <!-- 1° COLUMNA -->
+                <div class="col-lg-6 col-sm-12">
                     <h2>Necesitás ayuda o tenés dudas?</h2>
                     <p>
                         Si querés contactarte con nosotros podés hacerlo a través del siguiente formulario. Estaremos
-                        encantados de ayudarte en todo lo que esté a nuestra alcance.
+                        encantados de poder ayudarte en todo lo que esté a nuestra alcance.
                     </p>
                     <img src="../recursos/img/fitness.jpeg" alt="arnold_pensativo">
                 </div>
-                <div class="col-6">
+                <!-- FORM CONTACTO -->
+                <div class="col-lg-6 col-sm-12">
                     <section class="form">
                         <form action="#" method="get">
                             <div>
@@ -62,13 +69,15 @@
                                     <option value="BO">Bolivia</option>
                                 </select>
                             </div>
-                            <div>
-                                <div>M</div>
-                                <input type="radio" name="sexo" value="masculino">
-                            </div>
-                            <div>
-                                <div>F</div>
-                                <input type="radio" name="sexo" value="femenino">
+                            <div class="sexo">
+                                <div>
+                                    <div>M</div>
+                                    <input type="radio" name="sexo" value="masculino">
+                                </div>
+                                <div>
+                                    <div>F</div>
+                                    <input type="radio" name="sexo" value="femenino">
+                                </div>
                             </div>
                             <div>
                                 <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Dejanos tu comentario"
@@ -83,27 +92,31 @@
             </div>
         </section>
     </main>
+    <!-- FOOTER -->
     <footer>
-        <div class="tituloFooter">
-            <h2>Vivir Fitness</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <h2 class="tituloFooter">Vivir Fitness</h2>
+                </div>
+                <div class="col-md-3 col-sm-12 servicios">
+                    <img src="../recursos/img/Entrega.svg" alt="mano entregando un paquete" class="img">
+                    <p>ENVIOS GRATIS A PARTIR <br> DE $ 15000 <a href="#">Conoce más...</a></p>
+                </div>
+                <div class="col-md-3 col-sm- 12 servicios">
+                    <img src="../recursos/img/Garantia.svg" alt="mano con el pulgar hacia arriba dentro de un escudo"
+                        class="img">
+                    <p>MAXIMA CALIDAD <br><a href="#">Conoce más...</a></p>
+                </div>
+                <div class="col-md-3 col-sm-12 servicios">
+                    <img src="../recursos/img/Medioambiente.svg" alt="manos sosteniendo el planeta" class="img">
+                    <p>SOSTENIBILIDAD <br><a href="#">Conoce más...</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <p class="derechos">2023 - Todos los derechos reservados</p>
+            </div>
         </div>
-        <div class="serviciosFooter">
-            <div class="servicios">
-                <img src="../recursos/img/Entrega.svg" alt="mano entregando un paquete" class="img">
-                <p>ENVIOS GRATIS A PARTIR <br> DE $ 15000 <a href="#">Conoce más...</a></p>
-            </div>
-            <div class="servicios">
-                <img src="../recursos/img/Garantia.svg" alt="mano con el pulgar hacia arriba dentro de un escudo"
-                    class="img">
-                <p>MAXIMA CALIDAD <br><a href="#">Conoce más...</a></p>
-            </div>
-            <div class="servicios">
-                <img src="../recursos/img/Medioambiente.svg" alt="manos sosteniendo el planeta" class="img">
-                <p>SOSTENIBILIDAD <br><a href="#">Conoce más...</a></p>
-
-            </div>
-        </div>
-        <p class="derechos">2023 - Todos los derechos reservados</p>
     </footer>
 </body>
 

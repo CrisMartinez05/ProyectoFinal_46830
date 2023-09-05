@@ -84,6 +84,7 @@ h6 {
 }
 
 main {
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -146,6 +147,12 @@ form {
     color: white;
 }
 
+.sexo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .fondoForm {
     background-color: black;
     color: white;
@@ -193,10 +200,6 @@ footer {
     font-size: x-large;
 }
 
-/* .serviciosFooter {
-    color: white;
-} */
-
 .servicios {
     font-size: x-small;
     font-weight: 300;
@@ -239,10 +242,16 @@ footer {
     }
 
     h3{
-        font-size: medium;
+        font-size: auto;
     }
 
     aside {
         display: none;
+    }
+}
+
+@media(max-width: 450px){
+    form{
+        border: none;
     }
 }
