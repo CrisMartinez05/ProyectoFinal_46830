@@ -208,7 +208,7 @@ footer {
     height: 75px;
 }
 
-.container {
+#productos .container {
     display: grid;
     grid-template-columns: 2fr 35% 35% 1fr;
     grid-template-rows: auto 70px 200px 200px auto;
