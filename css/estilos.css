@@ -60,6 +60,19 @@ h1 {
     flex-direction: row;
     border: none;
 }
+/* PSEUDOCLASES | HOVER | FOCUS */
+.barra a:hover{
+    background-color: rgba(98, 94, 94, 0.615);
+    border: 2px solid white;
+    border-radius: 5px;
+    
+}
+
+.barra a:focus{
+    background-color: black;
+    border: none;
+    outline: 3px solid white;
+}
 
 /* MAIN */
 h2 {
