@@ -7,26 +7,58 @@
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Proyecto Final</title>
 </head>
 
 <body class="fondo">
     <!-- HEADER -->
-    <header class="z_index">
-        <!-- BARRA NAVEGACION -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./blog.html">Blogs</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="header-img">
+            <img src="../recursos/img/espalda.jpeg" alt="hombre de espalda">
+        </div>        
         <!-- TITULO -->
-        <h1>Vivir Fitness</h1>
+        <div class="header">
+            <h1>Vivir Fitness</h1>
+        </div>
     </header>
+    <!-- BARRA NAVEGACION -->
+    <div class="container barra">
+        <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="../index.html">Inicio</a>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item text-white">
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="./blog.html">Interesante</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
     <!-- MAIN -->
     <main>
         <section class="container">
@@ -118,6 +150,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
