@@ -54,7 +54,6 @@ h1 {
 .barra {
     position: sticky;
     top: 0;
-    transition: all .2s;
 }
 
 .d-flex {
@@ -62,19 +61,17 @@ h1 {
     border: none;
 }
 
-/* PSEUDOCLASES | HOVER | FOCUS */
+/* PSEUDOCLASES | HOVER  */
+
+.barra a {
+    transition: all 1s;
+}
+
 .barra a:hover {
     background-color: rgba(98, 94, 94, 0.615);
     border: 2px solid white;
     border-radius: 5px;
     transform: scale(1.08);
-
-}
-
-.barra a:focus {
-    background-color: rgba(179, 176, 18, 0.9);
-    border: none;
-    outline: 3px solid white;
 }
 
 /* MAIN */
