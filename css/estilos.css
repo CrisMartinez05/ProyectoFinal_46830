@@ -54,22 +54,25 @@ h1 {
 .barra {
     position: sticky;
     top: 0;
+    transition: all .2s;
 }
 
 .d-flex {
     flex-direction: row;
     border: none;
 }
+
 /* PSEUDOCLASES | HOVER | FOCUS */
-.barra a:hover{
+.barra a:hover {
     background-color: rgba(98, 94, 94, 0.615);
     border: 2px solid white;
     border-radius: 5px;
-    
+    transform: scale(1.08);
+
 }
 
-.barra a:focus{
-    background-color: black;
+.barra a:focus {
+    background-color: rgba(179, 176, 18, 0.9);
     border: none;
     outline: 3px solid white;
 }
@@ -122,6 +125,21 @@ section p {
     width: 90%;
     margin: auto;
     height: 120px;
+}
+
+@keyframes escalarFoto {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.escalado {
+    width: 100%;
+    animation: escalarFoto 1s linear infinite;
 }
 
 .embarazada {
