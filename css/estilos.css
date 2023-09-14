@@ -206,28 +206,27 @@ footer {
     height: 75px;
 }
 
+/* GRILLA PRODUCTOS */
 #productos .container {
     display: grid;
-    grid-template-columns: 2fr 35% 35% 1fr;
-    grid-template-rows: auto 70px 200px 200px auto;
-    gap: 5px 5px;
-    grid-auto-flow: row;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: auto 70px 200px 200px;
     grid-template-areas:
-        "Presentación Presentación Presentación Presentación"
-        "Información Suplementos Suplementos Aside"
-        "Información prod-1 prod-2 Aside"
-        "Información prod-3 prod-4 Aside"
-        "pie pie pie pie ";
+        "Presentación Presentación Presentación"
+        "Información Suplementos Suplementos"
+        "Información prod-1 prod-2"
+        "Información prod-3 prod-4";
 }
 
-.Presentación {
+.presentación {
     grid-area: Presentación;
     padding: 10px;
+    text-align: justify;
 }
 
-.Suplementos {
+.suplementos {
     grid-area: Suplementos;
-    padding: 5px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -235,8 +234,8 @@ footer {
     grid-area: prod-1;
     display: flex;
     text-align: justify;
-    overflow: auto;
     margin: 3px;
+    padding: 5px;
 
 }
 
@@ -244,30 +243,27 @@ footer {
     grid-area: prod-2;
     display: flex;
     text-align: justify;
-    overflow: auto;
     margin: 3px;
-
+    padding: 5px;
 }
 
 .prod-3 {
     grid-area: prod-3;
     display: flex;
     text-align: justify;
-    overflow: auto;
     margin: 3px;
-
+    padding: 5px;
 }
 
 .prod-4 {
     grid-area: prod-4;
     display: flex;
     text-align: justify;
-    overflow: auto;
     margin: 3px;
-
+    padding: 5px;
 }
 
-.Información {
+.información {
     grid-area: Información;
     color: rgba(193, 243, 95, 0.84);
     text-align: justify;
@@ -275,13 +271,12 @@ footer {
     overflow: auto;
 }
 
-.Aside {
-    grid-area: Aside;
+.descProd {
+    padding-left: 10px;
+    overflow: auto;
 }
 
-.pie {
-    grid-area: pie;
-}
+/* MEDIA QUERIES */
 
 @media(max-width: 990px) {
     .header-img {
@@ -290,8 +285,8 @@ footer {
 
     h1 {
         font-size: 70px;
-            }
- 
+    }
+
     h2 {
         font-size: medium;
     }
@@ -302,6 +297,21 @@ footer {
 
     aside {
         display: none;
+    }
+
+    #productos .container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto 70px repeat(4, 200px);
+        /* gap: 5px 5px;
+        grid-auto-flow: row; */
+        grid-template-areas:
+            "Presentación Presentación"
+            "Información Suplementos"
+            "Información prod-1"
+            "Información prod-2"
+            "Información prod-3"
+            "Información prod-4";
     }
 }
 
@@ -326,5 +336,24 @@ footer {
 
     form {
         border: none;
+    }
+
+    #productos .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 70px repeat(4, 200px);
+        /* gap: 5px 5px;
+        grid-auto-flow: row; */
+        grid-template-areas:
+            "Presentación"
+            "Suplementos"
+            "prod-1"
+            "prod-2"
+            "prod-3"
+            "prod-4";
+    }
+
+    .información {
+        display: none;
     }
 }
