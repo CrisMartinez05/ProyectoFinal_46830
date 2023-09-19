@@ -18,3 +18,11 @@ aside.index {
         }
     }
 }
+
+@media(max-width: 990px) {
+
+    aside.index{
+        display: none;
+    }
+}
+    

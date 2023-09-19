@@ -35,5 +35,13 @@ section.form {
     }
 }
 
+@media(max-width: 550px) {
+    section.form {
+        form {
+            border: none;
+        }
+    }    
+}
+
 
 

@@ -38,6 +38,24 @@ header {
       color: white;
       text-align: center; }
 
+@media (max-width: 990px) {
+  header div.header-img {
+    width: 70%; }
+  header div.header h1 {
+    font-size: 70px; } }
+
+@media (max-width: 768px) {
+  header div.header-img {
+    width: 85%; }
+  header div.header h1 {
+    font-size: 50px; } }
+
+@media (max-width: 550px) {
+  header div.header-img {
+    width: 100%; }
+  header div.header h1 {
+    font-size: xx-large; } }
+
 /* NAVEGACION */
 div.container.barra {
   position: sticky;
@@ -115,6 +133,12 @@ section p {
   display: flex;
   margin-top: 20px; }
 
+@media (max-width: 990px) {
+  h2 {
+    font-size: medium; }
+  h3 {
+    font-size: medium; } }
+
 /* ASIDE  */
 aside.index p {
   color: red;
@@ -128,6 +152,10 @@ aside.index p.motivacion {
   text-transform: uppercase; }
   aside.index p.motivacion span {
     font-size: xx-large; }
+
+@media (max-width: 990px) {
+  aside.index {
+    display: none; } }
 
 /* GRILLA PRODUCTOS */
 #productos .container {
@@ -185,6 +213,22 @@ aside.index p.motivacion {
   padding-left: 10px;
   overflow: auto; }
 
+@media (max-width: 990px) {
+  #productos .container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto 70px repeat(4, 200px);
+    grid-template-areas: "Presentación Presentación" "Información Suplementos" "Información prod-1" "Información prod-2" "Información prod-3" "Información prod-4"; } }
+
+@media (max-width: 550px) {
+  #productos .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 70px repeat(4, 200px);
+    grid-template-areas: "Presentación" "Suplementos" "prod-1" "prod-2" "prod-3" "prod-4"; }
+  .información {
+    display: none; } }
+
 /* FORMULARIO CONTACTO */
 section.form {
   margin-top: 20px; }
@@ -211,6 +255,10 @@ section.form {
       flex-direction: row;
       justify-content: space-evenly; }
 
+@media (max-width: 550px) {
+  section.form form {
+    border: none; } }
+
 /* FOOTER */
 footer {
   background-color: black;
@@ -232,44 +280,3 @@ footer {
     font-weight: 600;
     color: white;
     padding-top: 30px; }
-
-/* MEDIA QUERIES */
-@media (max-width: 990px) {
-  div.header-img {
-    width: 70%; }
-  h1 {
-    font-size: 70px; }
-  h2 {
-    font-size: medium; }
-  h3 {
-    font-size: medium; }
-  aside {
-    display: none; }
-  #productos .container {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: auto 70px repeat(4, 200px);
-    /* gap: 5px 5px;
-        grid-auto-flow: row; */
-    grid-template-areas: "Presentación Presentación" "Información Suplementos" "Información prod-1" "Información prod-2" "Información prod-3" "Información prod-4"; } }
-
-@media (max-width: 768px) {
-  div.header-img {
-    width: 85%; }
-  h1 {
-    font-size: 50px; } }
-
-@media (max-width: 550px) {
-  div.header-img {
-    width: 100%; }
-  h1 {
-    font-size: xx-large; }
-  form {
-    border: none; }
-  #productos .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 70px repeat(4, 200px);
-    grid-template-areas: "Presentación" "Suplementos" "prod-1" "prod-2" "prod-3" "prod-4"; }
-  .información {
-    display: none; } }

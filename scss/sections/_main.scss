@@ -75,3 +75,14 @@ section p {
     display: flex;
     margin-top: 20px;
 }
+
+@media(max-width: 990px) {
+    
+    h2 {
+        font-size: medium;
+    }
+
+    h3 {
+        font-size: medium;
+    }
+}
