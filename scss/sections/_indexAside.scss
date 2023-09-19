@@ -1,0 +1,20 @@
+/* ASIDE  */
+aside.index {
+    p {
+        color: red;
+        text-align: center;
+    }
+
+    img.img-aside {
+        width: 100%;
+    }
+
+    p.motivacion {
+        color: rgb(168, 244, 17);
+        text-transform: uppercase;
+
+        span {
+            font-size: xx-large;
+        }
+    }
+}

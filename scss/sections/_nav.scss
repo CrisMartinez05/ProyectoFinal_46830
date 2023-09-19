@@ -1,0 +1,24 @@
+/* NAVEGACION */
+
+div.container.barra {
+    position: sticky;
+    top: 0;
+
+    a {
+        transition: all 1s;
+    }
+
+    // HOOVER
+    a:hover {
+        background-color: rgba(98, 94, 94, 0.615);
+        border: 2px solid white;
+        border-radius: 5px;
+        transform: scale(1.08);
+    }
+
+    form.d-flex {
+        flex-direction: row;
+        border: none;
+    }
+}
+

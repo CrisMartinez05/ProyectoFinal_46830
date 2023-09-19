@@ -1,0 +1,275 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "nombre";
+  src: url(../recursos/fonts/Syne-ExtraBold.ttf); }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.fondo {
+  background-color: black;
+  color: white; }
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end; }
+  header div.header-img {
+    display: flex;
+    width: 60%;
+    justify-content: center; }
+    header div.header-img img {
+      width: 60%; }
+  header div.header {
+    display: flex;
+    text-align: center;
+    position: absolute; }
+    header div.header h1 {
+      font-family: "nombre";
+      font-style: oblique;
+      font-size: 80px;
+      padding-top: 85px;
+      color: white;
+      text-align: center; }
+
+/* NAVEGACION */
+div.container.barra {
+  position: sticky;
+  top: 0; }
+  div.container.barra a {
+    transition: all 1s; }
+  div.container.barra a:hover {
+    background-color: rgba(98, 94, 94, 0.615);
+    border: 2px solid white;
+    border-radius: 5px;
+    transform: scale(1.08); }
+  div.container.barra form.d-flex {
+    flex-direction: row;
+    border: none; }
+
+/* MAIN */
+h2 {
+  font-family: "nombre";
+  font-style: oblique;
+  color: white; }
+
+h3 {
+  font-family: "nombre";
+  font-style: oblique;
+  color: white;
+  padding-top: 20px; }
+
+h6 {
+  font-family: "nombre";
+  font-style: oblique;
+  font-weight: 100;
+  color: white;
+  font-size: 1em;
+  text-align: center; }
+
+main {
+  margin-top: 20px;
+  width: 100%; }
+
+section p {
+  padding-top: 20px;
+  color: white;
+  text-align: justify; }
+
+.img-main {
+  width: 100%; }
+
+.span {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: chartreuse; }
+
+.iframe {
+  width: 90%;
+  margin: auto;
+  height: 120px; }
+
+@keyframes escalarFoto {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.1); } }
+
+.escalado {
+  width: 100%;
+  animation: escalarFoto 1s linear infinite; }
+
+.embarazada {
+  width: 100%; }
+
+.blog {
+  text-align: justify; }
+
+.video {
+  display: flex;
+  margin-top: 20px; }
+
+/* ASIDE  */
+aside.index p {
+  color: red;
+  text-align: center; }
+
+aside.index img.img-aside {
+  width: 100%; }
+
+aside.index p.motivacion {
+  color: #a8f411;
+  text-transform: uppercase; }
+  aside.index p.motivacion span {
+    font-size: xx-large; }
+
+/* GRILLA PRODUCTOS */
+#productos .container {
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-rows: auto 70px 200px 200px;
+  grid-template-areas: "Presentación Presentación Presentación" "Información Suplementos Suplementos" "Información prod-1 prod-2" "Información prod-3 prod-4"; }
+
+.presentación {
+  grid-area: Presentación;
+  padding: 10px;
+  text-align: justify; }
+
+.suplementos {
+  grid-area: Suplementos;
+  padding: 30px;
+  text-align: center; }
+
+.prod-1 {
+  grid-area: prod-1;
+  display: flex;
+  text-align: justify;
+  margin: 3px;
+  padding: 5px; }
+
+.prod-2 {
+  grid-area: prod-2;
+  display: flex;
+  text-align: justify;
+  margin: 3px;
+  padding: 5px; }
+
+.prod-3 {
+  grid-area: prod-3;
+  display: flex;
+  text-align: justify;
+  margin: 3px;
+  padding: 5px; }
+
+.prod-4 {
+  grid-area: prod-4;
+  display: flex;
+  text-align: justify;
+  margin: 3px;
+  padding: 5px; }
+
+.información {
+  grid-area: Información;
+  color: rgba(193, 243, 95, 0.84);
+  text-align: justify;
+  margin: 3px;
+  overflow: auto; }
+
+.descProd {
+  padding-left: 10px;
+  overflow: auto; }
+
+/* FORMULARIO CONTACTO */
+section.form {
+  margin-top: 20px; }
+  section.form form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 20%;
+    border: solid white 2px;
+    background-color: black;
+    width: 60%;
+    text-align: center;
+    color: white; }
+    section.form form div {
+      margin: 20px 0; }
+      section.form form div .fondoForm {
+        background-color: black;
+        color: white;
+        border: solid white 1px; }
+      section.form form div label.fondoForm {
+        border: none; }
+    section.form form div.sexo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+
+/* FOOTER */
+footer {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  padding-top: 40px; }
+  footer h2.tituloFooter {
+    text-align: center;
+    font-size: x-large; }
+  footer div.servicios {
+    font-size: x-small;
+    font-weight: 300;
+    text-align: center;
+    color: white; }
+    footer div.servicios img.img {
+      height: 75px; }
+  footer p.derechos {
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    padding-top: 30px; }
+
+/* MEDIA QUERIES */
+@media (max-width: 990px) {
+  div.header-img {
+    width: 70%; }
+  h1 {
+    font-size: 70px; }
+  h2 {
+    font-size: medium; }
+  h3 {
+    font-size: medium; }
+  aside {
+    display: none; }
+  #productos .container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto 70px repeat(4, 200px);
+    /* gap: 5px 5px;
+        grid-auto-flow: row; */
+    grid-template-areas: "Presentación Presentación" "Información Suplementos" "Información prod-1" "Información prod-2" "Información prod-3" "Información prod-4"; } }
+
+@media (max-width: 768px) {
+  div.header-img {
+    width: 85%; }
+  h1 {
+    font-size: 50px; } }
+
+@media (max-width: 550px) {
+  div.header-img {
+    width: 100%; }
+  h1 {
+    font-size: xx-large; }
+  form {
+    border: none; }
+  #productos .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 70px repeat(4, 200px);
+    grid-template-areas: "Presentación" "Suplementos" "prod-1" "prod-2" "prod-3" "prod-4"; }
+  .información {
+    display: none; } }

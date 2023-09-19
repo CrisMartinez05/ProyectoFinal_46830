@@ -1,0 +1,77 @@
+/* MAIN */
+h2 {
+    font-family: "nombre";
+    font-style: oblique;
+    color: white;
+}
+
+h3 {
+    font-family: "nombre";
+    font-style: oblique;
+    color: white;
+    padding-top: 20px;
+}
+
+h6 {
+    font-family: "nombre";
+    font-style: oblique;
+    font-weight: 100;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+main {
+    margin-top: 20px;
+    width: 100%;
+}
+
+section p {
+    padding-top: 20px;
+    color: white;
+    text-align: justify;
+}
+
+.img-main {
+    width: 100%;
+}
+
+.span {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: chartreuse;
+}
+
+.iframe {
+    width: 90%;
+    margin: auto;
+    height: 120px;
+}
+
+@keyframes escalarFoto {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.escalado {
+    width: 100%;
+    animation: escalarFoto 1s linear infinite;
+}
+
+.embarazada {
+    width: 100%;
+}
+
+.blog {
+    text-align: justify;
+}
+
+.video {
+    display: flex;
+    margin-top: 20px;
+}
